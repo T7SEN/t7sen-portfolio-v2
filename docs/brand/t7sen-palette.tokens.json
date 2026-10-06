@@ -1,0 +1,222 @@
+{
+  "$description": "T7SEN palette for t7sen.com v2, approved October 2026. Design Tokens Format Module 2025.10.",
+  "color": {
+    "$type": "color",
+    "neutral": {
+      "void": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "hex": "#000000"
+        },
+        "$description": "Page background, canvas"
+      },
+      "ink": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.179,
+            0.0061,
+            285.8
+          ],
+          "hex": "#111114"
+        },
+        "$description": "Reading planes"
+      },
+      "graphite": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.2334,
+            0.0115,
+            285.5
+          ],
+          "hex": "#1d1d23"
+        },
+        "$description": "Raised elements"
+      },
+      "smoke": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.316,
+            0.0124,
+            285.7
+          ],
+          "hex": "#313138"
+        },
+        "$description": "Borders, dividers"
+      },
+      "ash": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.7154,
+            0.0144,
+            286.0
+          ],
+          "hex": "#a2a2ac"
+        },
+        "$description": "Secondary text"
+      },
+      "bone": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.9563,
+            0.0053,
+            286.3
+          ],
+          "hex": "#f0f0f4"
+        },
+        "$description": "Primary text"
+      }
+    },
+    "accent": {
+      "hollow": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.6202,
+            0.2431,
+            299.9
+          ],
+          "hex": "#a052ff"
+        },
+        "$description": "Main accent",
+        "$extensions": {
+          "com.t7sen.palette": {
+            "p3": {
+              "colorSpace": "oklch",
+              "components": [
+                0.62,
+                0.263,
+                300
+              ]
+            },
+            "linearSrgb": [
+              0.3515,
+              0.0844,
+              1.0
+            ]
+          }
+        }
+      },
+      "hollow-light": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.7201,
+            0.1719,
+            299.9
+          ],
+          "hex": "#b688ff"
+        },
+        "$description": "Accent text, links",
+        "$extensions": {
+          "com.t7sen.palette": {
+            "p3": {
+              "colorSpace": "oklch",
+              "components": [
+                0.72,
+                0.188,
+                300
+              ]
+            },
+            "linearSrgb": [
+              0.4678,
+              0.2462,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    "simulation": {
+      "reversal": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.6368,
+            0.2078,
+            25.3
+          ],
+          "hex": "#ef4444"
+        },
+        "$description": "Simulation and logo gradient only. Never used in UI.",
+        "$extensions": {
+          "com.t7sen.palette": {
+            "linearSrgb": [
+              0.8632,
+              0.0578,
+              0.0578
+            ]
+          }
+        }
+      },
+      "lapse": {
+        "$value": {
+          "colorSpace": "oklch",
+          "components": [
+            0.6231,
+            0.188,
+            259.8
+          ],
+          "hex": "#3b82f6"
+        },
+        "$description": "Simulation and logo gradient only. Never used in UI.",
+        "$extensions": {
+          "com.t7sen.palette": {
+            "linearSrgb": [
+              0.0437,
+              0.2232,
+              0.9216
+            ]
+          }
+        }
+      }
+    },
+    "role": {
+      "bg-page": {
+        "$value": "{color.neutral.void}",
+        "$description": "Page and canvas background"
+      },
+      "bg-reading": {
+        "$value": "{color.neutral.ink}",
+        "$description": "Reading planes over the canvas"
+      },
+      "bg-raised": {
+        "$value": "{color.neutral.graphite}",
+        "$description": "Command palette, cards"
+      },
+      "border": {
+        "$value": "{color.neutral.smoke}",
+        "$description": "Hairlines and dividers"
+      },
+      "text-primary": {
+        "$value": "{color.neutral.bone}",
+        "$description": "16.6:1 on Ink"
+      },
+      "text-secondary": {
+        "$value": "{color.neutral.ash}",
+        "$description": "7.4:1 on Ink"
+      },
+      "accent-fill": {
+        "$value": "{color.accent.hollow}",
+        "$description": "4.6:1 on Ink"
+      },
+      "accent-text": {
+        "$value": "{color.accent.hollow-light}",
+        "$description": "7.1:1 on Ink"
+      },
+      "on-accent": {
+        "$value": "{color.neutral.void}",
+        "$description": "Labels on Hollow, 5.2:1. White is banned (3.6:1)."
+      }
+    }
+  }
+}
