@@ -1,0 +1,44 @@
+/* T7SEN palette for t7sen.com v2, approved October 2026.
+   Plain CSS: use the --t7-* variables anywhere.
+   Tailwind v4: import this file after "tailwindcss". The @theme inline block
+   generates utilities such as bg-void, bg-ink, text-bone, and bg-hollow.
+   Reversal and Lapse are deliberately left out of @theme so no UI utility exists for them. */
+
+:root {
+  color-scheme: dark;
+
+  --t7-void: #000000; /* oklch(0% 0 0) | Page background, canvas */
+  --t7-ink: #111114; /* oklch(17.9% 0.006 285.8) | Reading planes */
+  --t7-graphite: #1d1d23; /* oklch(23.3% 0.011 285.5) | Raised elements */
+  --t7-smoke: #313138; /* oklch(31.6% 0.012 285.7) | Borders, dividers */
+  --t7-ash: #a2a2ac; /* oklch(71.5% 0.014 286.0) | Secondary text */
+  --t7-bone: #f0f0f4; /* oklch(95.6% 0.005 286.3) | Primary text */
+
+  --t7-hollow: #a052ff; /* oklch(62.0% 0.243 299.9) | Main accent */
+  --t7-hollow-light: #b688ff; /* oklch(72.0% 0.172 299.9) | Accent text, links */
+
+  /* Simulation and logo gradient only. Never use in UI. */
+  --t7-reversal: #ef4444; /* oklch(63.7% 0.208 25.3) | Simulation only */
+  --t7-lapse: #3b82f6; /* oklch(62.3% 0.188 259.8) | Simulation only */
+
+  --t7-logo-gradient: linear-gradient(135deg, var(--t7-reversal) 0%, var(--t7-hollow) 50%, var(--t7-lapse) 100%);
+}
+
+/* Wider gamut on P3 displays. */
+@media (color-gamut: p3) {
+  :root {
+    --t7-hollow: oklch(62% 0.263 300);
+    --t7-hollow-light: oklch(72% 0.188 300);
+  }
+}
+
+@theme inline {
+  --color-void: var(--t7-void);
+  --color-ink: var(--t7-ink);
+  --color-graphite: var(--t7-graphite);
+  --color-smoke: var(--t7-smoke);
+  --color-ash: var(--t7-ash);
+  --color-bone: var(--t7-bone);
+  --color-hollow: var(--t7-hollow);
+  --color-hollow-light: var(--t7-hollow-light);
+}
